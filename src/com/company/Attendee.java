@@ -10,9 +10,9 @@ public class Attendee {
     private Room roomType;
     private int credit;
 
-    public Attendee(String name, int idNumber, String emailAddress, String creditCardNumber, String interest) {
+    public Attendee(String name, String emailAddress, String creditCardNumber, String interest) {
         this.name = name;
-        this.idNumber = idNumber;
+        idNumber = 100;
         this.emailAddress = emailAddress;
         this.creditCardNumber = creditCardNumber;
         this.interest = interest;

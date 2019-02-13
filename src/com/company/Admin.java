@@ -14,11 +14,24 @@ public class Admin {
 
 
     public void viewAllAccommodations() {
-        for (Tent tent: tents) {
-            System.out.println("There are this many tents available: " + tents.size());
-            tent.printDetails();
+        System.out.println("this is running");
 
+        if (tents.isEmpty()) {
+            System.out.println("All tents are available");
         }
+
+        System.out.println(tents.size());
+    }
+
+    public void addTent(Tent tent) {
+        tents.add(tent);
+        System.out.println(tents.size());
+    }
+
+    public void addAttendee(Attendee attendee) {
+        attendees.add(attendee);
+        System.out.println(attendee);
+        System.out.println(attendees.size());
     }
 
     public List<Tent> getTents() {
