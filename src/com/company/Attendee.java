@@ -8,6 +8,7 @@ public class Attendee {
     private String creditCardNumber;
     private String interest;
     private Room roomType;
+    private int credit;
 
     public Attendee(String name, int idNumber, String emailAddress, String creditCardNumber, String interest) {
         this.name = name;
@@ -16,6 +17,7 @@ public class Attendee {
         this.creditCardNumber = creditCardNumber;
         this.interest = interest;
         this.roomType = new Room();
+        credit = 0;
     }
 
     @Override
@@ -76,5 +78,13 @@ public class Attendee {
 
     public void setRoomType(Room roomType) {
         this.roomType = roomType;
+    }
+
+    public int getCredit() {
+        return credit;
+    }
+
+    public void setCredit(int credit) {
+        this.credit = credit;
     }
 }
