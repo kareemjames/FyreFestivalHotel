@@ -10,4 +10,10 @@ public class Cabin extends Room {
         super.setNumberOfBeds("8");
     }
 
-}
+    public void printDetails() {
+        System.out.println("Number of Beds" + getNumberOfBeds());
+        System.out.println("Amenities" + super.getAmenities());
+        }
+    }
+
+

@@ -10,6 +10,12 @@ public class Tent extends Room {
         super.setNumberOfBeds("4");
     }
 
+    @Override
+    public void printDetails() {
+        System.out.println("Candles: " + noOfCandles);
+        System.out.println("Number of Beds" + getNumberOfBeds());
+    }
+
     public String getNoOfCandles() {
         return noOfCandles;
     }

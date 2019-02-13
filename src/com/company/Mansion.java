@@ -9,6 +9,12 @@ public class Mansion extends Room {
        super.setNumberOfBeds("9");
     }
 
+    public void printDetails(){
+        System.out.println(freeMansionCredits);
+        System.out.println(super.getNumberOfBeds());
+        System.out.println(super.getAmenities());
+    }
+
     public int getFreeMansionCredits() {
         return freeMansionCredits;
     }
