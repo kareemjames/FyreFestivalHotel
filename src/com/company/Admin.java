@@ -10,7 +10,23 @@ public class Admin {
     private List<Cabin> cabins = new ArrayList<>(2);
     private List<Mansion> mansions = new ArrayList<>(1);
     private List<Attendee> attendees = new ArrayList<>();
+    private Attendee foundAttendee;
 
+
+    public Attendee searchByID(int userID){
+
+
+        for (int i = 0; i <attendees.size() ; i++) {
+            if (userID == attendees.get(i).getIdNumber()){
+                foundAttendee = attendees.get(i);
+                System.out.println("Found " + foundAttendee.getName() + "'s profile." );
+                break;
+            } else {
+                System.out.println("Not found");
+            }
+        }
+        return foundAttendee;
+    }
 
 
     public void viewAllAccommodations() {

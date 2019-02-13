@@ -20,6 +20,26 @@ public class Attendee {
         credit = 0;
     }
 
+
+    public void addFyreCredits(int userCredit) {
+        credit += userCredit;
+        System.out.println("Your balance is now: " + credit);
+    }
+
+    public boolean subtractCostFromCredit(int amountSubtractedFromCredits) {
+
+        if (credit > amountSubtractedFromCredits) {
+            credit -= amountSubtractedFromCredits;
+            System.out.println("Your new balance: " + credit);
+            return true;
+        } else {
+            System.out.println("Please got to main menu and add credits");
+            return false;
+        }
+
+    }
+
+
     @Override
     public String toString() {
         return "Attendee{" +

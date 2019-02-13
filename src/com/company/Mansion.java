@@ -7,6 +7,15 @@ public class Mansion extends Room {
     public Mansion() {
        freeMansionCredits = 500;
        super.setNumberOfBeds("9");
+       super.setPricePerNight(1000);
+
+    }
+
+    @Override
+    public String toString() {
+        return "Mansion{" +
+                "freeMansionCredits=" + freeMansionCredits +
+                '}';
     }
 
     public void printDetails(){

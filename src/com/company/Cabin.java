@@ -8,6 +8,8 @@ public class Cabin extends Room {
 
     public Cabin() {
         super.setNumberOfBeds("8");
+        super.setPricePerNight(1000);
+
     }
 
     public void printDetails() {
